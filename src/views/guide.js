@@ -1,27 +1,18 @@
 import React from 'react'
-
+import Guide from '../components/guide/guide.js'
 import { Helmet } from 'react-helmet'
-
+import Nav from '../components/nav_and_footer/nav.js'
 import { useHistory } from 'react-router-dom'
 
-import FeatureCard from '../components/FeatureCard/feature-card'
-import Question1 from '../components/question1'
-import './home.css'
-//import MyForm from '../components/Form'
-
-const Home = (props) => {
-  const history = useHistory();
-
-  const handleClick = () => {
-    history.push('/log');
-  };
   return (
+
+
     <div className="home-container">
       <Helmet>
         <title>CroPhecy</title>
         <meta property="og:title" content="Fitting Devoted Jackal" />
       </Helmet>
-      
+      <Nav/>
       <div className="home-hero">
         <div className="heroContainer home-hero1">
           <div className="home-container01">
@@ -351,4 +342,4 @@ const Home = (props) => {
   )
 }
 
-export default Home
+export default MainGuide

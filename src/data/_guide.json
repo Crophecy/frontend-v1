@@ -1,0 +1,152 @@
+{
+    "crop":[
+        {
+            "id":1,
+            "src":"./imgs/product-chain-1.png",
+            "title":"Rice",
+            "description": [
+                "Growing rice involves several steps, from preparing the field to harvesting the crop. Here's a step-by-step guide to growing rice:",
+                "**1. Site Selection:**",
+                "   - Choose a suitable location with the following characteristics:",
+                "     - Flat or gently sloping land to facilitate water management.",
+                "     - Availability of water, either through rainfall or irrigation.",
+                "     - Well-draining soil with a clayey texture.",
+                "2. Land Preparation:",
+                "   - Plow the field to break up the soil.",
+                "   - Level the field to ensure uniform water distribution.",
+                "   - Add organic matter or compost to enhance soil fertility.",
+                "3. Seed Selection:",
+                "   - Choose high-quality rice seeds from a reliable source.",
+                "   - Select a rice variety that suits your climate and soil conditions.",
+                "   - Incorporate crop residues into the soil for organic matter.",
+                "By following these steps, you can successfully grow rice from preparation to harvest. Keep in mind that specific practices may vary depending on the rice variety, climate, and local agricultural conditions. It's advisable to seek guidance from local agricultural extension services for more region-specific recommendations."
+              ]
+        },
+        {
+            "id":2,
+            "src":"./imgs/tag-1.png",
+            "title":"Maize",
+            "decription":""
+        },
+        {
+            "id":3,
+            "src":"./imgs/feather-pen-2.png",
+            "title":"Chickpea",
+            "decription":""
+        },
+        {
+            "id":4,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Kidney Beans",
+            "decription":""
+        },
+        {
+            "id":5,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Mungbean",
+            "decription":""
+        },
+        {
+            "id":6,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Black Gram",
+            "decription":""
+        },
+        {
+            "id":7,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Lentil",
+            "decription":""
+        },
+        {
+            "id":8,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Pomegranate",
+            "decription":""
+        },
+        {
+            "id":9,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Banana",
+            "decription":""
+        },
+        {
+            "id":10,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Mango",
+            "decription":""
+        },
+        {
+            "id":11,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Grapes",
+            "decription":""
+        },
+        {
+            "id":12,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Grapes",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Grapes",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Watermelon",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Muskmelon",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Apple",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Orange",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Papaya",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Coconut",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Cotton",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Jute",
+            "decription":""
+        },
+        {
+            "id":13,
+            "src":"./imgs/feather-pen-1.png",
+            "title":"Coffee",
+            "decription":""
+        }
+    ]
+}
