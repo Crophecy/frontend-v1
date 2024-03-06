@@ -1,0 +1,34 @@
+--> place the about.js file in views folder and change the extension to .js
+--> recheck all the import ( might be a error on react-icons --> this import can be removed as its not used )
+--> node mailer is working and mail is received on mailtrap.io 
+--> api for nodemailer -->
+
+app.post('/contact', async (req, res) => {
+  let { name, email,contactNumber, query } = req.body;
+
+  let transport = nodemailer.createTransport({
+    host: "sandbox.smtp.mailtrap.io",
+    port: 2525,
+    auth: {
+      user: "7bc7663e0c74dc",
+      pass: "ff961f48ffd607"
+    }
+  });
+
+  let mailOptions = {
+    from: 'abhi021102@gmail.com',
+    to: 'abhi021102@gmail.com',
+    subject: `Message from ${name}`,
+    text: `From: ${email}\n\n${query}\n\n ${contactNumber}`
+  };
+
+  try {
+    await transport.sendMail(mailOptions);
+    res.status(200).send('Email sent');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error sending email');
+  }
+});
+
+--> recheck the url as per requirement for api call
