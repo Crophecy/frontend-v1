@@ -13,7 +13,7 @@ import { Marginer } from "../marginer";
 import { AccountContext } from './accountContext';
 
 export function SignupForm(props) {
-  
+ 
   const { switchToSignin } = useContext(AccountContext);
   const [formData, setFormData] = useState({
     name: "",
@@ -29,7 +29,7 @@ export function SignupForm(props) {
   
   const handleSignup = async (e) => {
     e.preventDefault();
-  
+
     // Add form validation logic
     if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword) {
       // Display an error message or handle the error as needed
@@ -52,7 +52,7 @@ export function SignupForm(props) {
         },
         body: JSON.stringify(formData),
       });
-  
+      
       if (response.ok) {
         const data = await response.json();
         console.log(data);

@@ -1,18 +1,27 @@
 import React from 'react'
 import {Link , useNavigate} from "react-router-dom";
 import { Helmet } from 'react-helmet'
-
+import {message} from 'antd'
 import { useHistory } from 'react-router-dom'
 
 
 import '../../views/home.css'
 //import MyForm from '../components/Form'
 
+const isUserLoggedIn = !!localStorage.getItem("user");
 const Nav = (props) => {
+  // const { switchToSignup } = useContext(AccountContext);
   const history = useHistory();
-
   const handleClick = () => {
     history.push('/log');
+  };
+  const logoutHandler = () => {
+    localStorage.removeItem("user");
+    // navigate("/login");
+    history.push('/'); // Reload the page after logout
+    message.success("Logout successful");
+    window.location.reload();
+    
   };
   return (
     <div className="home-container">
@@ -55,13 +64,23 @@ const Nav = (props) => {
              >Guide</Link>
             
             </nav>
-            <div className="home-buttons">
+            {!isUserLoggedIn&&(
+
+              <div className="home-buttons">
               <button 
                 className="home-login buttonFlat"
                 onClick={handleClick}
-              >Login</button>
-              <button className="buttonFilled">Register</button>
+                >Login</button>
+              <button className="buttonFilled" >Register</button>
             </div>
+            )}
+            {isUserLoggedIn&&(
+
+              <div className="home-buttons">
+              <button className="buttonFilled" onClick={logoutHandler}>Logout</button>
+              </div>
+            )}
+
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
             <svg viewBox="0 0 1024 1024" className="home-icon socialIcons">

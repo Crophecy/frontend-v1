@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import './style.css';
 import Home from './views/home';
 import NotFound from './views/not-found';
@@ -17,6 +16,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/guide" component={Guide} exact />
+          <Route path="/log" component={Log} exact />
           <Route component={NotFound} />
         </Switch>
       </Router>
