@@ -7,6 +7,7 @@ import NotFound from './views/not-found';
 import Log from './views/log';
 import Nav from './components/nav_and_footer/nav';
 import Guide from './components/guide/guide';
+import About from './views/about';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <Route path="/guide" component={Guide} exact />
           <Route path="/log" component={Log} exact />
+          <Route path='/aboutus' component={About} />
           <Route component={NotFound} />
         </Switch>
       </Router>
