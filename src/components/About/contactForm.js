@@ -33,8 +33,14 @@ class MyForm extends React.Component {
         query: this.state.query,
       }),
     })
-    .then(response => response.json())
-    .then(data => console.log(data))
+    .then(response => {
+      console.log('Response:', response);
+      return response.json();
+    })
+    .then(data => {
+      console.log('Data:', data);
+      console.log('Your response has been submitted'); // Show popup here
+    })
     .catch((error) => {
       console.error('Error:', error);
     });
